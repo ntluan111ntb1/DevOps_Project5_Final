@@ -59,7 +59,7 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-          fingerprints: ["67:95:11:c5:2b:d7:16:26:e6:e0:4a:7f:eb:1d:8b:bd"]
+          fingerprints: ["46:e3:de:23:67:ca:71:f0:db:62:ef:56:0a:e7:3e:20"]
       - run:
           name: install dependence and cli
           command: |
@@ -130,6 +130,6 @@ workflows:
       - build-image-java:
           requires:
             - install-and-check-dockerfile
-      - create-cluster
+      - create-cluster:
           requires:
             - build-image-java
