@@ -91,14 +91,14 @@ jobs:
           name: create AWS profile
           command: |
             aws configure set aws_access_key_id "$AWS_ACCESS_KEY" --profile luannt29 && aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY" --profile luannt29 && aws configure set region "$AWS_DEFAULT_REGION" --profile luannt29
-      - run:
-          name: delete exist cluster
-          command: |
-            chmod +x delete_cluster.sh
-            ./delete_cluster.sh
-      - run:
-          name: wait for 500 seconds to delete cluster
-          command: sleep 500
+      # - run:
+      #     name: delete exist cluster
+      #     command: |
+      #       chmod +x delete_cluster.sh
+      #       ./delete_cluster.sh
+      # - run:
+      #     name: wait for 500 seconds to delete cluster
+      #     command: sleep 500
       - run:
           name: create cluster
           command: |
