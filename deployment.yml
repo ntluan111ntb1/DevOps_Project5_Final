@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops_project5
+  name: devops-project5
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: devops_project5
+      app: devops-project5
   template:
     metadata:
       labels:
-        app: devops_project5
+        app: devops-project5
     spec:
       containers:
-        - name: devops_project5
+        - name: devops-project5
           image: 0399468055/devops_project5:latest
           ports:
             - containerPort: 8080

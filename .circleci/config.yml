@@ -107,7 +107,7 @@ jobs:
       - run:
           name: deployment app
           command: |
-            aws eks update-kubeconfig --region us-east-1 --name devops_project5 --profile luannt29
+            aws eks update-kubeconfig --region us-east-1 --name devops-project5 --profile luannt29
             kubectl apply -f deployment.yml
       - run:
           name: attach to elb
