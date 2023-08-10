@@ -1,6 +1,6 @@
 # dockerfile
 FROM openjdk:17-ea-oraclelinux8
-WORKDI /app
+WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 RUN chmod +x ./mvnw
