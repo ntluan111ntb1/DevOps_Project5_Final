@@ -1,0 +1,3 @@
+github: https://github.com/ntluan111ntb1/DevOps_Project5_Final
+dockerhub: https://hub.docker.com/repository/docker/0399468055/devops_project5
+project: ae2465ecb35ee4d36b2fdb12f7fdd49c-1509572544.us-east-1.elb.amazonaws.com
