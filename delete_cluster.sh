@@ -1,0 +1,1 @@
+eksctl delete cluster --name devops_project5 --region us-east-1
